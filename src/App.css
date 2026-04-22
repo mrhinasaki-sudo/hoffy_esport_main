@@ -1,0 +1,417 @@
+/* ========================= */
+/* RESET */
+/* ========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========================= */
+/* ROOT FIX */
+/* ========================= */
+
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* ========================= */
+/* BODY */
+/* ========================= */
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: #0f172a;
+  color: #e5e7eb;
+}
+
+/* ========================= */
+/* HEADER FIX (FOR CENTER NAV) */
+/* ========================= */
+
+header {
+  background: #020617;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #1e293b;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: relative;
+  width: 100%; /* 🔥 IMPORTANT */
+}
+
+/* LOGO */
+.logo {
+  color: #22c55e;
+  font-size: 1.5rem;
+  z-index: 2;
+}
+
+/* CENTER NAV */
+.nav-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 2rem; /* spacing between links */
+}
+
+.nav-center a {
+  color: #cbd5f5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-center a:hover {
+  color: #22c55e;
+}
+
+/* RIGHT SIDE */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 2;
+}
+
+/* ========================= */
+/* CENTER NAV */
+/* ========================= */
+
+.nav-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-center a {
+  margin: 0 1rem;
+  color: #cbd5f5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-center a:hover {
+  color: #22c55e;
+}
+
+/* ========================= */
+/* RIGHT SIDE (USER) */
+/* ========================= */
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-name {
+  color: #e5e7eb;
+  font-weight: 600;
+  background: #1e293b;
+  padding: 6px 12px;
+  border-radius: 999px;
+}
+
+.logout-btn {
+  background: #f59e0b;
+  color: #020617;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.logout-btn:hover {
+  background: #fbbf24;
+}
+
+/* ========================= */
+/* LAYOUT */
+/* ========================= */
+
+.container {
+  max-width: 1100px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+/* TITLE */
+
+.news-title {
+  font-size: 64px;
+  font-weight: 800;
+  margin-bottom: 3rem;
+}
+
+/* ========================= */
+/* GRID */
+/* ========================= */
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+/* ========================= */
+/* CARD */
+/* ========================= */
+
+.news-card {
+  text-decoration: none;
+  color: #e5e7eb;
+  display: block;
+  cursor: pointer;
+}
+
+/* IMAGE */
+
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  transition: 0.3s ease;
+}
+
+/* HOVER */
+
+.news-card:hover img {
+  transform: scale(1.05);
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+  transition: 0.2s ease;
+}
+
+/* PLAY BUTTON */
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #22c55e;
+  border-radius: 50%;
+  padding: 10px 14px;
+  font-size: 16px;
+  color: #020617;
+  font-weight: bold;
+}
+
+/* TEXT */
+
+.tag {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 0.7rem;
+  color: #22c55e;
+}
+
+.news-card h3 {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+.news-card p {
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+/* ========================= */
+/* FOOTER */
+/* ========================= */
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: #6889b6;
+}
+
+/* ========================= */
+/* ARTICLE PAGE */
+/* ========================= */
+
+.article-page {
+  background: #0f172a;
+  color: white;
+}
+
+.article-header {
+  padding: 1rem 2rem;
+}
+
+.article-header a {
+  color: #22c55e;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.article-hero {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  background: #020617;
+}
+
+.article-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.article-hero::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, #0f172a);
+}
+
+.article-content {
+  max-width: 900px;
+  margin: -40px auto 3rem auto;
+  background: #020617;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+  text-align: left;
+}
+
+.article-meta {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  margin-bottom: 1rem;
+}
+
+.article-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.article-sub {
+  color: #cbd5f5;
+  margin-bottom: 1.5rem;
+}
+
+.article-content p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+  color: #e5e7eb;
+}
+
+/* ========================= */
+/* AUTH */
+/* ========================= */
+
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.auth-box {
+  background: #020617;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+.auth-box h2 {
+  margin-bottom: 1rem;
+}
+
+.auth-box input {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.auth-box button {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.auth-box p {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 600px) {
+  .news-title {
+    font-size: 40px;
+  }
+
+  .nav-center {
+    display: none; /* hide center nav on small screens */
+  }
+}
+/* ========================= */
+/* NEW HEADER LAYOUT */
+/* ========================= */
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #020617;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #1e293b;
+}
+
+/* LEFT */
+.nav-left h1 {
+  color: #22c55e;
+  font-size: 1.5rem;
+}
+
+/* CENTER (THIS FIXES YOUR ISSUE) */
+.nav-center {
+  display: flex;
+  gap: 2rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-center a {
+  color: #cbd5f5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-center a:hover {
+  color: #22c55e;
+}
+
+/* RIGHT */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
