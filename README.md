@@ -1,21 +1,27 @@
-# React + TypeScript + Vite
+# HOFFY eSports
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a modern **React + TypeScript + Vite** web application built for an eSports-themed platform. It includes routing, authentication UI (login/signup), user state handling with localStorage, and a clean multi-page structure designed for an eSports experience.
 
-While this project uses React, Vite supports many popular JS frameworks. [See all the supported frameworks](https://vitejs.dev/guide/#scaffolding-your-first-vite-project).
+The project focuses on fast performance, responsive design, and a scalable frontend architecture using React Router and functional components.
+
+While this project is built as an eSports website, Vite supports many popular JS frameworks.  
+[See all the supported frameworks](https://vitejs.dev/guide/#scaffolding-your-first-vite-project).
+
+---
 
 ## Deploy Your Own
 
-Deploy your own Vite project with Vercel.
+Deploy your own version of this Vite project with Vercel.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/examples/tree/main/framework-boilerplates/vite-react&template=vite-react)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
 
-_Live Example: https://vite-react-example.vercel.app_
+_Live Example: (add your deployed link here once ready)_
+
+---
 
 ### Deploying From Your Terminal
 
-You can deploy your new Vite project with a single command from your terminal using [Vercel CLI](https://vercel.com/download):
+You can deploy this project with a single command using the [Vercel CLI](https://vercel.com/download):
 
 ```shell
-$ vercel
-```
+vercel
